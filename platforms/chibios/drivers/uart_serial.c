@@ -8,7 +8,7 @@
 #include <hal.h>
 
 #ifndef UART_DRIVER
-#    define UART_DRIVER SD1
+#    define UART_DRIVER SD3
 #endif
 
 #ifndef UART_TX_PIN
