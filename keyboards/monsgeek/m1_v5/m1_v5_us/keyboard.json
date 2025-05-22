@@ -3,6 +3,7 @@
     "keyboard_name": "M1 V5",
     "maintainer": "yangzheng20003",
     "bootloader": "wb32-dfu",
+    "modules": ["getreuer/palettefx"],
     "bootmagic": {
         "matrix": [0, 0]
     },
