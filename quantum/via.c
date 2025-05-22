@@ -24,6 +24,9 @@
 
 #include "via.h"
 
+#include "qmk_version.h"
+#include "protocol/host.h"
+
 #include "raw_hid.h"
 #include "dynamic_keymap.h"
 #include "eeprom.h"
