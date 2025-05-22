@@ -92,8 +92,8 @@ bool rgbrec_show(uint8_t channel) {
     rgbrec_info.channel = channel;
     rgbrec_read_current_channel(rgbrec_info.channel);
 
-    if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_RGBR_PLAY) {
-        rgb_matrix_mode(RGB_MATRIX_CUSTOM_RGBR_PLAY);
+    if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_USER) {
+        rgb_matrix_mode(RGB_MATRIX_CUSTOM_USER);
     }
 
     return true;
@@ -110,8 +110,8 @@ bool rgbrec_start(uint8_t channel) {
         rgbrec_info.state   = RGBREC_STATE_ON;
         rgbrec_info.channel = channel;
         rgbrec_read_current_channel(rgbrec_info.channel);
-        if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_RGBR_PLAY) {
-            rgb_matrix_mode(RGB_MATRIX_CUSTOM_RGBR_PLAY);
+        if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_USER) {
+            rgb_matrix_mode(RGB_MATRIX_CUSTOM_USER);
         }
 
         return true;

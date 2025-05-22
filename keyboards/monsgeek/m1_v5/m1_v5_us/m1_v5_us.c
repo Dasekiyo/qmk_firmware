@@ -640,7 +640,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         } break;
         case RP_END: {
             if (record->event.pressed) {
-                if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_RGBR_PLAY) {
+                if (rgb_matrix_get_mode() != RGB_MATRIX_CUSTOM_USER) {
 
                     return false;
                 }
@@ -661,7 +661,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         case RGB_MOD: {
             if (record->event.pressed) {
                 rgb_blink_dir();
-                if (rgb_matrix_get_mode() == RGB_MATRIX_CUSTOM_RGBR_PLAY) {
+                if (rgb_matrix_get_mode() == RGB_MATRIX_CUSTOM_USER) {
                     if (rgbrec_is_started()) {
                         rgbrec_read_current_channel(confinfo.record_channel);
                         rgbrec_end(confinfo.record_channel);
